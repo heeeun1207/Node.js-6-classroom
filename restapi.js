@@ -8,7 +8,6 @@ const getPokemonData = (url, pokemonName) => {
   return new Promise((resolve , reject )=> {
     //반환이 Promise 이므로 , resolve()함수가 호출될 때까지는 대기한다.
     //아래의 body에 데이터 조각들이 차곡차곡 모여 resolve() 함수가 호출될 때까지 대기한다.
-
     https.get(assembleUrl, (res)=>{
       let body = '';
       //on() 이벤트리스너로 주소로부터 데이터를 받는다.
